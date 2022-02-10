@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         role : 'Client'
       },
       {
-        role : 'Viewer'
+        role : 'Auditor'
       }
     ]
 
