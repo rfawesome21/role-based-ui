@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { login } from '../reducers/user'
 import { FormControl, TextField, Button, Card, CardHeader, CardContent, Checkbox, FormControlLabel, CardMedia } from '@mui/material';
+import NavBar from '../components/Navbar'
 
 
 const Login: NextPage = () => {
@@ -40,7 +41,9 @@ const Login: NextPage = () => {
     }
 
   return (
-    <Card className='flex h-screen p-5'>
+    <div>
+      <NavBar />
+    <div className='flex p-5'>
       <div className='pl-20 pr-20 pt-5 w-full'>
         <CardHeader title={'Easy Audit Logo'} />
         <CardHeader title={'Login'} />
@@ -70,7 +73,8 @@ const Login: NextPage = () => {
       <div className='flex pl-20 pr-20 pt-5 w-8/12 xl:w-full'>
         <img src='./leeds.jpg' alt='random image' className='h-full' />
       </div>
-    </Card>
+    </div>
+    </div>
   )
 }
 

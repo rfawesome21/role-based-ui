@@ -12,14 +12,14 @@ type Props = {};
 const NavBar = (props: Props) => {
   const router = useRouter()
 
-  const user = useSelector((state: RootState) => state.user.value)
-  const permission = user.role === 'Admin'? user.role : 'Auditor'
+  // const user = useSelector((state: RootState) => state.user.value)
+  // const permission = user.role === 'Admin'? user.role : 'Auditor'
 
 
   return (
-    <PermissionProvider permissions={[user.role]}>
-      <Navbar bg="light" expand="lg">
-        <Container>
+    // <PermissionProvider permissions={[user.role]}>
+      <Navbar bg="light" expand="xl" className='h-16'>
+        {/* <Container>
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -41,9 +41,9 @@ const NavBar = (props: Props) => {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </Container> */}
       </Navbar>
-    </PermissionProvider>
+    // </PermissionProvider>
   )
 }
 
