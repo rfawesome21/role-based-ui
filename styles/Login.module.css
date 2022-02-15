@@ -1,0 +1,105 @@
+.Link{
+    color: #68b4c4;
+    text-decoration: none;
+}
+.Button{
+    background-color: #4F13A6;
+    border-radius: 2.063rem;
+    height: 3.563rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+.Button:hover{
+    background-color: #4F13A6;
+    color: white;
+}
+
+.Button:disabled{
+    color: white;
+    cursor: not-allowed;
+}
+
+.Background{
+    background-image: radial-gradient(#ffeaff, #fcf5fc);
+    width: 50%;
+}
+
+.Circle{
+    background-color: #14265E;
+    border-radius: 50%;
+    height: 22.5rem;
+    width: 22.5rem;
+    display: inline-block;
+}
+
+.Image{
+    position: absolute;
+}
+
+.Text{
+    color: #6F6C99;
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .Image{
+        width: 85%;
+    }   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .Circle{
+        background-color: #14265E;
+        border-radius: 50%;
+        height: 19.5rem;
+        width: 19.5rem;
+        display: inline-block;
+    }
+    .Image{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .Circle{
+        background-color: #14265E;
+        border-radius: 50%;
+        height: 16.5rem;
+        width: 16.5rem;
+        display: inline-block;
+    }
+    .Image{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .Circle{
+        background-color: #14265E;
+        border-radius: 50%;
+        height: 9.5rem;
+        width: 9.5rem;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .Circle{
+        background-color: #14265E;
+        border-radius: 50%;
+        height: 7.5rem;
+        width: 7.5rem;
+        display: inline-block;
+    }
+}
+
+.Input{
+    border: 1px solid #C3CBCD;
+    height: 3.563rem;
+    border-radius: 2.063rem;
+    padding-left: 1rem;
+}
+
+.Input:focus{
+    border: 1px solid #C3CBCD;
+}
