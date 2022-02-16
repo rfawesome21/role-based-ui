@@ -25,9 +25,13 @@ const Login: NextPage = () => {
             <div className='p-5'>
               <img src='./Logo.png' alt='Logo' className='w-64' />
             </div>
-            <div className='flex justify-center items-center h-4/6 w-full relative'>
+            <div className='flex justify-center items-center w-full relative py-3'>
               <div className={Styles.Circle}></div>
-              <img src='./LoginImage.png' alt='LoginImage' className={`${Styles.Image} max-h-80`}/>
+              <img src='./LoginImage.png' alt='LoginImage' className={`${Styles.Image} max-h-64`}/>
+            </div>
+            <div className={`flex flex-wrap mx-auto text-center mt-5 ${Styles.CarouselText}`}>
+              <h6 className='lg:text-lg mx-auto font-medium'>Gain visibility into your roles and control 
+                  over your permissions</h6>
             </div>
         </div>
         <div className='flex flex-col h-screen flex-1'>

@@ -28,8 +28,8 @@
 .Circle{
     background-color: #14265E;
     border-radius: 50%;
-    height: 22.5rem;
-    width: 22.5rem;
+    height: 20.5rem;
+    width: 20.5rem;
     display: inline-block;
 }
 
@@ -41,10 +41,18 @@
     color: #6F6C99;
 }
 
+.CarouselText{
+    width: 45%;
+}
+
 @media screen and (min-width:1024px) and (max-width:1280px) {
     .Image{
         width: 85%;
-    }   
+    }
+
+    .CarouselText{
+        width: 65%;
+    }  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -58,6 +66,9 @@
     .Image{
         width: 85%;
     }
+    .CarouselText{
+        width: 75%;
+    }  
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -71,16 +82,22 @@
     .Image{
         width: 95%;
     }
+    .CarouselText{
+        width: 75%;
+    }  
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
     .Circle{
         background-color: #14265E;
         border-radius: 50%;
-        height: 9.5rem;
-        width: 9.5rem;
+        height: 12.5rem;
+        width: 12.5rem;
         display: inline-block;
     }
+    .CarouselText{
+        width: 100%;
+    }  
 }
 
 @media screen and (min-width: 300px) and (max-width: 400px) {
@@ -91,6 +108,9 @@
         width: 7.5rem;
         display: inline-block;
     }
+    .CarouselText{
+        width: 100%;
+    } 
 }
 
 .Input{

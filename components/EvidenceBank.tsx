@@ -8,33 +8,38 @@ type Props = {};
 
 const EvidenceBank = (props: Props) => {
 
-    const user = useSelector((state: RootState) => state.user.value)
-    const permission = user.role === 'Admin'? user.role : 'Auditor'
+    // const user = useSelector((state: RootState) => state.user.value)
+    // const permission = user.role === 'Admin'? user.role : 'Auditor'
+    // return (
+    //         <PermissionProvider permissions={[user.role]}>
+    //             <h1>Evidence List</h1>
+    //       <div>
+    //       <RestrictPermissions to={'Admin'}>
+    //           <h3>Lorem Ipsum Jaggen Diur</h3>
+    //         </RestrictPermissions>
+    //       <RestrictPermissions to='Admin'>
+    //           <h5>Upload Evidence</h5>
+    //       </RestrictPermissions>
+    //       </div>
+    //       <RestrictPermissions to={permission}>
+    //           <h3>Lorem Ipsum Jaggen Diur</h3>
+    //             <RestrictPermissions to='Admin'>
+    //                 <h5>Upload Evidence</h5>
+    //             </RestrictPermissions>
+    //     </RestrictPermissions>
+    //     <RestrictPermissions to={permission}>
+    //           <h3>Lorem Ipsum Jaggen Diur</h3>
+    //           <RestrictPermissions to='Admin'>
+    //                 <h5>Upload Evidence</h5>
+    //         </RestrictPermissions>
+    //       </RestrictPermissions>
+    //   </PermissionProvider>
+    // );
     return (
-            <PermissionProvider permissions={[user.role]}>
-                <h1>Evidence List</h1>
-          <div>
-          <RestrictPermissions to={'Admin'}>
-              <h3>Lorem Ipsum Jaggen Diur</h3>
-            </RestrictPermissions>
-          <RestrictPermissions to='Admin'>
-              <h5>Upload Evidence</h5>
-          </RestrictPermissions>
-          </div>
-          <RestrictPermissions to={permission}>
-              <h3>Lorem Ipsum Jaggen Diur</h3>
-                <RestrictPermissions to='Admin'>
-                    <h5>Upload Evidence</h5>
-                </RestrictPermissions>
-        </RestrictPermissions>
-        <RestrictPermissions to={permission}>
-              <h3>Lorem Ipsum Jaggen Diur</h3>
-              <RestrictPermissions to='Admin'>
-                    <h5>Upload Evidence</h5>
-            </RestrictPermissions>
-          </RestrictPermissions>
-      </PermissionProvider>
-    );
+      <div>
+        
+      </div>
+    )
 };
 
 export default EvidenceBank;
