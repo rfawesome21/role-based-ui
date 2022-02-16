@@ -3,11 +3,11 @@
     text-decoration: none;
 }
 .Button{
-    background-color: #4F13A6;
-    border-radius: 2.063rem;
+    background-color: #4F13A6!important;
+    border-radius: 2.063rem!important;
     height: 3.563rem;
-    color: white;
-    text-transform: capitalize;
+    color: white!important;
+    text-transform: capitalize!important;
 }
 
 .Button:hover{
